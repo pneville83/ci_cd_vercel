@@ -20,31 +20,31 @@ test('like 3 al renderizar por primera vez ', () => {
 });
 
 
-// test ('like 2 al sumar un click  ', () => {
-//   render ( <App /> );
-//   const button = screen.getByTestId ("plus2");
-//   fireEvent.click (button);
+test ('like 2 al sumar un click  ', () => {
+  render ( <App /> );
+  const button = screen.getByTestId ("plus2");
+  fireEvent.click (button);
 
-//   const like2 = screen.getByTestId ("countLike2");
-//   expect (like2.textContent).toBe ("1")
-// })
+  const like2 = screen.getByTestId ("countLike2");
+  expect (like2.textContent).toBe ("1")
+})
 
-// test ('like 3 al sumar 100  click  ', () => {
-//   render ( <App />);
-//   const button = screen.getByTestId ("plus3")
-//   for (let i=0; i < 100; i++){
-//     fireEvent.click (button);
-//   }
-//   const like2 = screen.getByTestId ("countLike3");
-//   expect (like2.textContent).toBe ("110")
-// })
+test ('like 3 al sumar 100  click  ', () => {
+  render ( <App />);
+  const button = screen.getByTestId ("plus3")
+  for (let i=0; i < 100; i++){
+    fireEvent.click (button);
+  }
+  const like2 = screen.getByTestId ("countLike3");
+  expect (like2.textContent).toBe ("110")
+})
 
-// test ('like 1 al restar 30  click  ', () => {
-//   render ( <App />);
-//   const button = screen.getByTestId ("less")
-//   for (let i=0; i < 35; i++){
-//     fireEvent.click (button);
-//   }
-//   const like = screen.getByTestId ("countLike1");
-//   expect (like.textContent).toBe ("0")
-// })
+test ('like 1 al restar 30  click  ', () => {
+  render ( <App />);
+  const button = screen.getByTestId ("less")
+  for (let i=0; i < 35; i++){
+    fireEvent.click (button);
+  }
+  const like = screen.getByTestId ("countLike1");
+  expect (like.textContent).toBe ("0")
+})
