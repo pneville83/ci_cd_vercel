@@ -1,5 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import App from '../App';
+import React from 'react';
 
 test('like 1 al renderizar por primera vez ', () => {
   render(<App />);
